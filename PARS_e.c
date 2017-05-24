@@ -305,7 +305,7 @@ ST[0].nSiteList[154]=7160; 	ST[0].nLinkList[154]=RADIO1_8;	/* RADIO1_3 34-41				
 ST[0].nSiteList[155]=7161; 	ST[0].nLinkList[155]=RADIO2_7;	/* RADIO2_7 92-06					ZEG*/
 ST[0].nSiteList[156]=7162; 	ST[0].nLinkList[156]=RADIO9_1;	/* RADIO1_1 35-23					SZVAR*/
 ST[0].nSiteList[157]=7163; 	ST[0].nLinkList[157]=RADIO1_1;	/* RADIO1_1 30-65					SZVAR*/
-ST[0].nSiteList[158]=7164; 	ST[0].nLinkList[158]=RADIO1_3;	/* RADIO1_3 32-54					SZVAR*/
+ST[0].nSiteList[158]=7164; 	ST[0].nLinkList[158]=RADIO9_1;	/* RADIO1_3 32-54					SZVAR*/
 ST[0].nSiteList[159]=7165; 	ST[0].nLinkList[159]=RADIO1_1;	/* RADIO1_1 32-53					SZVAR*/
 ST[0].nSiteList[160]=7166; 	ST[0].nLinkList[160]=RADIO5_1;	/* RADIO5_1 85-27					IGM*/
 ST[0].nSiteList[161]=7167; 	ST[0].nLinkList[161]=RADIO1_8;	/* RADIO1_8 32-22					SZVAR*/
