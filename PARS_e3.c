@@ -2005,5 +2005,15 @@ sT[0].sTI[220].nType = TYP_TAL;
 		
 
 
+/* Front end A -----------------------------------------------------------*/
+sT[0].sTI[221].nType = TYP_FRONTEND;
+
+/* Front end C -----------------------------------------------------------*/
+sT[0].sTI[222].nType = TYP_FRONTEND;
+
+/* Front end G -----------------------------------------------------------*/
+sT[0].sTI[223].nType = TYP_FRONTEND;
+
+
 } /* end fnSetDataPar()*/
 
