@@ -2014,6 +2014,8 @@ sT[0].sTI[222].nType = TYP_FRONTEND;
 /* Front end G -----------------------------------------------------------*/
 sT[0].sTI[223].nType = TYP_FRONTEND;
 
+/* Redundancia A -----------------------------------------------------------*/
+sT[0].sTI[224].nType = TYP_FRONTEND;
 
 } /* end fnSetDataPar()*/
 
