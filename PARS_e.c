@@ -391,15 +391,16 @@ ST[0].nSiteList[216]=530; 	ST[0].nLinkList[216]=LINE2;		/* Tatabánya Galla						
 ST[0].nSiteList[217]=540; 	ST[0].nLinkList[217]=LINE2;		/* Zalaegerszeg városi						*/
 ST[0].nSiteList[218]=550; 	ST[0].nLinkList[218]=LINE2;		/* KÖFÉM									*/
 ST[0].nSiteList[219]=560; 	ST[0].nLinkList[219]=LINE2;		/* Lenti									*/
-
-ST[0].nSiteList[221]=3; 	ST[0].nLinkList[220]=RSLINK3;	/* Front end A								*/
-ST[0].nSiteList[222]=5000; 	ST[0].nLinkList[221]=RSLINK3;	/* Front end C								*/
-ST[0].nSiteList[223]=9000; 	ST[0].nLinkList[222]=RSLINK3;	/* Front end G								*/
-
-
-
-
 ST[0].nSiteList[220]=7214; 	ST[0].nLinkList[220]=RADIO8_1;	/* Szentgotthárd, vízierõmû			SZENTG	*/
+
+ST[0].nSiteList[221]=3; 	ST[0].nLinkList[221]=RSLINK3;	/* Front end A								*/
+ST[0].nSiteList[222]=5000; 	ST[0].nLinkList[222]=RSLINK3;	/* Front end C								*/
+ST[0].nSiteList[223]=9000; 	ST[0].nLinkList[223]=RSLINK3;	/* Front end G								*/
+ST[0].nSiteList[224]=8990; 	ST[0].nLinkList[224]=RSLINK3;	/* Redundancia A							*/
+
+
+
+
 
 
 
