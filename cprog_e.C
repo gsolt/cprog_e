@@ -3506,7 +3506,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 500;  /* DP3, 225 */																		/**/
 ReteszParancsokKezdoCim = 750;	/* DC4, 125 */																		/**/
 																													/**/
-ReteszesTMOKNum = 3;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 6;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK:  40-93 Front end A -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3523,6 +3523,25 @@ TMOKAllasjelzesOffsetek[2] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban
 TMOK_ID[2] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[2][0] = 188;			/* Szombathely Depónia */													/**/
 ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 3. TMOK:  64-26 -> Ostffyasszonyfa biogáz -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[3] = 1253; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[3] =1253;						/* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[3][0] = 78;			/* Ostfyyasszonyfa biogáz */													/**/
+ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 4. TMOK:  74-24 -> Ostfyyasszonyfa biogáz -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[4] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[4] =1254;						/* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[4][0] = 78;			/* Ostfyyasszonyfa biogáz */													/**/
+ReteszesTMOK_RTUNum[4] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 5. TMOK:  70-27 -> Ostfyyasszonyfa biogáz -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[5] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[5] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[5][0] = 78;			/* Ostfyyasszonyfa biogáz */													/**/
+ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
 																													/**/
 /**********************************************************************************************************************/
 
