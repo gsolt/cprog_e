@@ -3488,6 +3488,8 @@ unsigned int		TMOK_ID[RETESZ_TMOK_NUM];							/* Reteszes TMOK-k azonosítója a t
 
 
 unsigned int		ReteszAllapotok[RETESZ_TMOK_NUM];
+static unsigned int		PrReteszAllapotok[RETESZ_TMOK_NUM];
+
 unsigned int		TMOKAllasjelzesek[RETESZ_TMOK_NUM];
 
 
@@ -3614,18 +3616,18 @@ for (i=0;i<ReteszesTMOKNum;i++)
 /* Ha változott az állásjelzés és nincs bénítva a retesz, akkor elküldi a TMOK állásjelzését a kiserõmûnek (RTU-nak), vagy egy másik front endnek *****************/
 for (i=0;i<ReteszesTMOKNum ;i++)
 {
-	if( (TMOKAllasjelzesek[i] != prevTMOKAllasjelzesek[i]) && ( ReteszAllapotok[i] != 2 ) )
+	if( ((TMOKAllasjelzesek[i] != prevTMOKAllasjelzesek[i]) && ( ReteszAllapotok[i] != 2 ) ) || (ReteszAllapotok[i] == 1 && PrReteszAllapotok[i]!=1) )
 	{
 		/* elküldi az állapotot a kiserõmûnek */
 		for (j=0;j<ReteszesTMOK_RTUNum[i] ;j++)
 		{
 
    		   	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
-   		   	nTxBuf[1] = TMOKAllasjelzesek[i]; /*  << 14;  Ez a formátum jön a TMOK-ból*/ 
+   		   	nTxBuf[1] = TMOKAllasjelzesek[i]; /* << 14;  Ez a formátum jön a TMOK-ból*/    	
    		   	nTxBuf[2] = TMOK_ID[i];    	
    		   		
    		   	
- 		   	MOSCAD_sprintf(message,"Állásjelzés küldése, index: %d, Value: %d, i: %d, j: %d, azonosító: %d",ReteszesRTUIndex[i][j],TMOKAllasjelzesek[i],i,j,TMOK_ID[i] );
+ 		   	MOSCAD_sprintf(message,"Állásjelzés küldése, index: %d, Value: %d, i: %d, j: %d,nTxBuf[1]: %d ,nTxBuf[2]: %d ",ReteszesRTUIndex[i][j],TMOKAllasjelzesek[i],i,j,nTxBuf[1],nTxBuf[2] );
    			MOSCAD_error(message ); 
  
    		   	
@@ -3639,11 +3641,38 @@ for (i=0;i<ReteszesTMOKNum ;i++)
 		} /* end for*/
 	} /* end if */
 
+
+	if(  ReteszAllapotok[i] == 2 && PrReteszAllapotok[i]!=2 ) /* Ha retesz élesítésre vált akkor nulláz */
+	{
+		/* elküldi a nulla állapotot a kiserõmûnek */
+		for (j=0;j<ReteszesTMOK_RTUNum[i] ;j++)
+		{
+
+   		   	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
+   		   	nTxBuf[1] = 0; /* Nullázza az állásjelzést */    	
+   		   	nTxBuf[2] = TMOK_ID[i];    	
+   		   		
+   		   	
+ 		   	MOSCAD_sprintf(message,"Állásjelzés nullázás, index: %d, Value: %d, i: %d, j: %d,nTxBuf[1]: %d ",ReteszesRTUIndex[i][j],TMOKAllasjelzesek[i],i,j,nTxBuf[1] );
+   			MOSCAD_error(message ); 
+ 
+   		   	
+			/* Tavirat elkuldese */
+			
+	 		  	if (MOSCAD_TxFrm(ReteszesRTUIndex[i][j], nTxBuf, TX_LENGTH*2) !=0 )
+ 			  	{
+					MOSCAD_sprintf(message,"Could not send parancs ,index: %d",ReteszesRTUIndex[i][j]);
+   				 	MOSCAD_error(message ); 				
+   				}     		    			
+		} /* end for*/	
+	} /* end if */
+
+
+
 /* Mindenképpen frissíti az állásjelzések tömbjét 	*/
 prevTMOKAllasjelzesek[i] = TMOKAllasjelzesek[i] ;
-	
+PrReteszAllapotok[i]=ReteszAllapotok[i];	
 } /* end for */
-	
 } /* end fnRetesz ********************************************************************************************************************************/
 
 
