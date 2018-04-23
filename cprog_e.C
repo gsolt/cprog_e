@@ -3508,18 +3508,20 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 500;  /* DP3, 225 */																		/**/
 ReteszParancsokKezdoCim = 750;	/* DC4, 125 */																		/**/
 																													/**/
-ReteszesTMOKNum = 6;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 7;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK:  40-93 Front end A -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[0] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[0][0] = 188;			/* Szombathely Depónia */													/**/
 ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
 /* 1. TMOK:  40-57 Front end C -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[1] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[1] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[1][0] = 188;			/* Szombathely Depónia */													/**/
 ReteszesTMOK_RTUNum[1] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
 /* 2. TMOK:  40-85 Front end C -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[2] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[2] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/
@@ -3545,6 +3547,11 @@ ReteszesRTUIndex[5][0] = 78;			/* Ostfyyasszonyfa biogáz */													/**/
 ReteszesRTUIndex[5][1] = 77;			/* Ostfyyasszonyfa biogáz */													/**/
 ReteszesTMOK_RTUNum[5] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 
+/* 6. TMOK:  45-12 -> Kõszegdoroszló PV erõmû -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[6] = 347; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[6] =1254;						/* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[6][0] = 223;			/* Front end G */													/**/												/**/
+ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 																													/**/
 /**********************************************************************************************************************/
 
