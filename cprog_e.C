@@ -3513,7 +3513,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 500;  /* DP3, 225 */																		/**/
 ReteszParancsokKezdoCim = 750;	/* DC4, 125 */																		/**/
 																													/**/
-ReteszesTMOKNum = 10;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 13;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK:  40-93 Front end A -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3576,22 +3576,52 @@ ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomássa
 nReteszPar[7] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[7] = 7;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 8. TMOK:  30-55 -> Kincsesbánya 03-100 PV erõmû -----------------------*/															/**/
+/* 8. TMOK:  30-55 -> Front end G: Kincsesbánya 03-100 PV erõmû, A Redindancia, Csór 65/1, 65/2 -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[8] = 319; /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[8][0] =1259;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[8][0] = 223;			/* G front end */													/**/
-ReteszesTMOK_RTUNum[8] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+TMOK_ID[8][1] =3;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[8][1] = 224;			/* A redundancia */													/**/
+
+ReteszesTMOK_RTUNum[8] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[8] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[8] = 8;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 9. TMOK:  31-48 -> Kincsesbánya 03-100 PV erõmû -----------------------*/															/**/
+/* 9. TMOK:  31-48 -> Front end G, Kincsesbánya 03-100 PV erõmû ,A redundancia: Csór 65/1, 65/2-----------------------*/															/**/
 TMOKAllasjelzesOffsetek[9] = 49; /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[9][0] =1260;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[9][0] = 223;			/* G front end */													/**/
-ReteszesTMOK_RTUNum[9] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+TMOK_ID[9][1] =4;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[9][1] = 224;			/* A redundancia */													/**/
+
+ReteszesTMOK_RTUNum[9] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[9] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
-nReteszOffset[9] = 9;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
-																													/**/
+nReteszOffset[9] = 9;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/	/**/
+                                                          
+/* 10. TMOK:  41-98 -> G front end, RTU: Kenéz 062-9 PV erõmû -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[10] = 26; /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[10][0] =1269;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[10][0] = 223;			/* G front end */													/**/
+ReteszesTMOK_RTUNum[10] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[10] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[10] = 10;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/	/**/
+
+/* 11. TMOK:  31-32 -> E front end, RTU: Székesfehérvár, Csala -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[11] = 1256; /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[11][0] =1256;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[11][0] = 183;			/* Székesfehérvár, Csala */													/**/
+ReteszesTMOK_RTUNum[11] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[11] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 12. TMOK:  42-50 -> E front end, RTU: Szentgotthárd, vízierõmû -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[12] = 1257; /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[12][0] =1257;						  /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[12][0] = 220;			/* Szentgotthárd, vízierõmû */													/**/
+ReteszesTMOK_RTUNum[12] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[12] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+                                                          
 /**********************************************************************************************************************/
 
 
