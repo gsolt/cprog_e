@@ -227,7 +227,7 @@ ST[0].nSiteList[80]	=7088; 	ST[0].nLinkList[80]	=RADIO5_1;	/* RADIO5_1 Nagyszent
 ST[0].nSiteList[81]	=7089; 	ST[0].nLinkList[81]	=RADIO1_1;	/* RADIO1_1 31-37					SZVAR*/
 ST[0].nSiteList[82]	=7090; 	ST[0].nLinkList[82]	=RADIO5_2;	/* RADIO5_1 Szõny, Dunalys			IGM*/
 ST[0].nSiteList[83]	=7091; 	ST[0].nLinkList[83]	=RADIO2_7;	/* RADIO2_7 43-18					ZEG*/
-ST[0].nSiteList[84]	=7092; 	ST[0].nLinkList[84]	=RADIO2_7;	/* RADIO2_7 43-19					ZEG*/
+ST[0].nSiteList[84]	=7092; 	ST[0].nLinkList[84]	=RADIO2_8;	/* RADIO2_7 43-19					ZEG*/
 ST[0].nSiteList[85]	=7093; 	ST[0].nLinkList[85]	=RADIO8_5;	/* RADIO2_7 43-14					ZEG*/
 ST[0].nSiteList[86]	=7094; 	ST[0].nLinkList[86]	=RADIO9_4;	/* RADIO2_7 31-52					SZVAR*/
 ST[0].nSiteList[87]	=7095; 	ST[0].nLinkList[87]	=RADIO8_1;	/* RADIO8_1 Szentgotthárd,Allison	SZGRD*/
