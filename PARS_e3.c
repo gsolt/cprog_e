@@ -1743,6 +1743,9 @@ sT[0].sTI[188].nType = TYP_TAL;
 		sT[0].sTAL[188].nIEC_NM				= 651;
 		sT[0].sTAL[188].nNMNum		  		= 11;
 		sT[0].sTAL[188].nKommStatusNum		= 2;
+    sT[0].sTAL[188].nSP_EXTRA_OFFSET		= 3835;
+  	sT[0].sTAL[188].nSP_EXTRA_NUM		= 2;
+
 	
 /* Székesfehérvár, Attila út  -----------------------------------------------------------*/	
 sT[0].sTI[189].nType = TYP_MOT;	
