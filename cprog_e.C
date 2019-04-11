@@ -3542,7 +3542,8 @@ TMOKAllasjelzesOffsetek[3] = 347; 		/* Az állásjelzés offsete a DP adatbázisban 
 TMOK_ID[3][0] =1254;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[3][0] = 223;			/* Front end G */													/**/												/**/
 ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
-nReteszPar[3] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszPar[3] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[3] = 3;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 
 
@@ -3658,6 +3659,7 @@ nReteszOffset[16] = 14;             /* DC parancs és DP állapot offsete, ha tart
 
 /* 17. TMOK:  85-00 -> G: Almásfüzítõ 012 PV -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[17] = 482; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[17][0] =1284;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[17][0] = 223;			/* G front end */													/**/
 ReteszesTMOK_RTUNum[17] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
