@@ -3514,7 +3514,7 @@ int     DP1,DP2;          /* Szõny, Dunalys állásjelzései */
 ReteszAllapotokKezdoCim = 500;  /* DP3, 225 */																		/**/
 ReteszParancsokKezdoCim = 750;	/* DC4, 125 */																		/**/
 																													/**/
-ReteszesTMOKNum = 21;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 23;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK:  40-93 Front end A -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3703,6 +3703,21 @@ ReteszesTMOK_RTUNum[20] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomáss
 nReteszPar[20] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[20] = 18;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
+/* 21. TMOK:  86-57 -> G: Kisbér 0129 PV -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[21] = 486; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[21][0] =1298;						     /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[21][0] = 223;			/* G front end */													/**/
+ReteszesTMOK_RTUNum[21] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[21] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[21] = 19;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 22. TMOK:  86-38 -> G: Kisbér 0129 PV -----------------------*/															/**/
+TMOKAllasjelzesOffsetek[22] = 487; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[22][0] =1299;						     /* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[22][0] = 223;			/* G front end */													/**/
+ReteszesTMOK_RTUNum[22] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[22] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[22] = 20;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
                                                           
 /**********************************************************************************************************************/
 
