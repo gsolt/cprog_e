@@ -610,7 +610,7 @@ ST[0].sRAD_K1[0].nIndx[54]=178;
 
 
 /* K2 : SZOM, MOS, SZENTG*/
-ST[0].sRAD_K2[0].nRtuNumRad = 37; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 38; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=14;
 ST[0].sRAD_K2[0].nIndx[2]=15;
@@ -648,12 +648,13 @@ ST[0].sRAD_K2[0].nIndx[33]=198;
 ST[0].sRAD_K2[0].nIndx[34]=199;
 ST[0].sRAD_K2[0].nIndx[35]=200;
 ST[0].sRAD_K2[0].nIndx[36]=220;
+ST[0].sRAD_K2[0].nIndx[37]=171;
 
 
 
 
 /* K3 : SZVAR, ORNY, IG */
-ST[0].sRAD_K3[0].nRtuNumRad = 122; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 123; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=1; /*8*/
 ST[0].sRAD_K3[0].nIndx[1]=2; /*8*/
 ST[0].sRAD_K3[0].nIndx[2]=3; /*8*/
@@ -675,7 +676,7 @@ ST[0].sRAD_K3[0].nIndx[17]=46; /*8*/
 ST[0].sRAD_K3[0].nIndx[18]=48; /*8*/
 ST[0].sRAD_K3[0].nIndx[19]=49; /*8*/
 ST[0].sRAD_K3[0].nIndx[20]=50; /*8*/
-ST[0].sRAD_K3[0].nIndx[21]=51; /*8*/
+
 ST[0].sRAD_K3[0].nIndx[21]=52; /*8*/
 ST[0].sRAD_K3[0].nIndx[22]=57; /*8*/
 ST[0].sRAD_K3[0].nIndx[23]=58; /*8*/
@@ -777,7 +778,7 @@ ST[0].sRAD_K3[0].nIndx[118]=210; /*8*/
 ST[0].sRAD_K3[0].nIndx[119]=211; /*8*/
 ST[0].sRAD_K3[0].nIndx[120]=212; /*8*/
 ST[0].sRAD_K3[0].nIndx[121]=213; /*8*/
-
+ST[0].sRAD_K3[0].nIndx[122]=51; /*8*/
 
 
 /*RST[0].sLINK RTUk indexei*/
