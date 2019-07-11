@@ -3556,9 +3556,13 @@ nReteszPar[5] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartoz
 
 /* 6. TMOK:  70-27 -> Ostfyyasszonyfa + Kemenesmagosi biogáz -----------------------*/															/**/
 TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[6][0] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/
 ReteszesRTUIndex[6][0] = 78;			/* Ostfyyasszonyfa biogáz */													/**/
-ReteszesRTUIndex[6][1] = 77;			/* Ostfyyasszonyfa biogáz */													/**/
+
+TMOK_ID[6][1] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/
+ReteszesRTUIndex[6][1] = 77;			/* Kemenesmagosi */													/**/
+
 ReteszesTMOK_RTUNum[6] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                       
