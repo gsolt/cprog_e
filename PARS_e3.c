@@ -899,6 +899,8 @@ sT[0].sTI[77].nType = TYP_TAL;
 		sT[0].sTAL[77].nIEC_NM				= 250;
 		sT[0].sTAL[77].nNMNum		  		= 11;
 		sT[0].sTAL[77].nKommStatusNum		= 2;
+    sT[0].sTAL[77].nSP_EXTRA_OFFSET		= 3841;
+  	sT[0].sTAL[77].nSP_EXTRA_NUM		= 2;
 
 /* Ostfyasszonyfa, biogaz -----------------------------------------------------------*/
 sT[0].sTI[78].nType = TYP_TAL;
@@ -1694,6 +1696,8 @@ sT[0].sTI[183].nType = TYP_TAL;
 		sT[0].sTAL[183].nIEC_NM				= 629;
 		sT[0].sTAL[183].nNMNum		  		= 11;
 		sT[0].sTAL[183].nKommStatusNum		= 2;
+    sT[0].sTAL[183].nSP_EXTRA_OFFSET		= 3837;
+  	sT[0].sTAL[183].nSP_EXTRA_NUM		= 2;
 
 /*  Mór átjátszó -----------------------------------------------------------*/	
 sT[0].sTI[184].nType = TYP_MOT;	
@@ -2008,6 +2012,8 @@ sT[0].sTI[220].nType = TYP_TAL;
 		sT[0].sTAL[220].nIEC_NM				= 739;
 		sT[0].sTAL[220].nNMNum		  		= 11;
 		sT[0].sTAL[220].nKommStatusNum		= 2;
+    sT[0].sTAL[220].nSP_EXTRA_OFFSET		= 3839;
+  	sT[0].sTAL[220].nSP_EXTRA_NUM		= 2;
 		
 
 
